@@ -5,7 +5,7 @@
       <!-- <div>{{$store.state.login}}</div> -->
       <div>
         <v-img
-          :src="require('@/assets/logo.png')"
+          src="https://aoanwebvue.oss-cn-beijing.aliyuncs.com/assets/logo.png?Expires=1610618010&OSSAccessKeyId=TMP.3KhjyNezPEPQvqBw86eX6FLsnVU934q2bwQMvKstH3Ga6BhRkKxJRBXS21ffDyxxNL8C6VNULXYka96xSstY4QkMXCyFH9&Signature=zRBRqSberj%2FGq7%2Fl7uapZUnLcKY%3D&versionId=CAEQCxiBgMDq7bKAuBciIGM3MjI2Yzk2MWFhYzRkNDg4M2JmMzllNzRmYTg1ODkx&response-content-type=application%2Foctet-stream"
           aspect-ratio="1"
           width="56"
         ></v-img>
