@@ -2,7 +2,7 @@
   <v-container class="pa-0" fluid>
     <!-- 这是小导航栏 -->
     <v-img
-      src="https://aoanwebvue.oss-cn-beijing.aliyuncs.com/assets/aboutUs/shitou.jpg?Expires=1610617774&OSSAccessKeyId=TMP.3KhjyNezPEPQvqBw86eX6FLsnVU934q2bwQMvKstH3Ga6BhRkKxJRBXS21ffDyxxNL8C6VNULXYka96xSstY4QkMXCyFH9&Signature=TTVF1L4e9S1HSPGahK5e02ciork%3D&versionId=CAEQCxiBgMCW4aiAuBciIDkzZDdhYmEwMTk3NDQ5ODQ5NTI3MmQ2ZWYxYjkwNmMx&response-content-type=application%2Foctet-stream"
+      src="https://aoanwebvue.oss-cn-beijing.aliyuncs.com/assets/aboutUs/shitou.jpg?Expires=1610695058&OSSAccessKeyId=TMP.3KigYQ5mW24ziH8JB2qYhY1B8xmiLWx5kcLLt4BPN7gyE6vHFRuSpoBrZ2Hz6CHwircxV2bEppzzHkdRk87JKmyf1cg2Pd&Signature=qVBLG3bsfaphNija4AauiVofxcU%3D&versionId=CAEQCxiBgMCW4aiAuBciIDkzZDdhYmEwMTk3NDQ5ODQ5NTI3MmQ2ZWYxYjkwNmMx&response-content-type=application%2Foctet-stream"
       :aspect-ratio="3"
       class="white--text"
     >
@@ -156,7 +156,7 @@
         <v-col cols="10" md=6 offset="1" offset-md="3">
           <v-img
             :aspect-ratio="2"
-            src="https://aoanwebvue.oss-cn-beijing.aliyuncs.com/assets/aboutUs/map.png?Expires=1610617882&OSSAccessKeyId=TMP.3KhjyNezPEPQvqBw86eX6FLsnVU934q2bwQMvKstH3Ga6BhRkKxJRBXS21ffDyxxNL8C6VNULXYka96xSstY4QkMXCyFH9&Signature=W6yC%2FiKsd1TSija02LRDTJv6D5w%3D&versionId=CAEQCxiBgMCY4aiAuBciIDE4ZDBiNWRiY2Q0ZTQwNTJhMmMyMDBlNjg3N2I0MzAz&response-content-type=application%2Foctet-stream"
+            src="https://aoanwebvue.oss-cn-beijing.aliyuncs.com/assets/aboutUs/map.png?Expires=1610695116&OSSAccessKeyId=TMP.3KigYQ5mW24ziH8JB2qYhY1B8xmiLWx5kcLLt4BPN7gyE6vHFRuSpoBrZ2Hz6CHwircxV2bEppzzHkdRk87JKmyf1cg2Pd&Signature=a9310TitPA7IwpYm5kwWr9CBojY%3D&versionId=CAEQCxiBgMCY4aiAuBciIDE4ZDBiNWRiY2Q0ZTQwNTJhMmMyMDBlNjg3N2I0MzAz&response-content-type=application%2Foctet-stream"
           ></v-img>
         </v-col>
       </v-row>
