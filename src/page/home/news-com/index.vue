@@ -12,7 +12,7 @@
       <v-col cols="12" sm="6" md="6" lg="4" >
         <v-img
           :aspect-ratio="16 / 9"
-          src="https://aoanwebvue.oss-cn-beijing.aliyuncs.com/assets/home/news/1.png?Expires=1610620067&OSSAccessKeyId=TMP.3KhjyNezPEPQvqBw86eX6FLsnVU934q2bwQMvKstH3Ga6BhRkKxJRBXS21ffDyxxNL8C6VNULXYka96xSstY4QkMXCyFH9&Signature=P4VBnT8jLmMwWr2q%2FtSAWSrOjEU%3D&versionId=CAEQCxiBgICSn.6AuBciIDAyZWVlYjg4ODYxNTQ0MmFhODMwNDU4Yzk0Njc0NDc3&response-content-type=application%2Foctet-stream"
+          src="https://aoanwebvue.oss-cn-beijing.aliyuncs.com/assets/home/news/1.png?"
         ></v-img>
         <h3 class="mx-5 title my-16 text-h5 text-sm-h4">地球科学研究院召开工作研讨会</h3>
         <div class="text-h6 text-sm-h5 mb-5 mx-5" @click="handleClick(10)" id="xq">
@@ -39,7 +39,7 @@
           <v-col sm="4" lg="12">
             <v-card style="height:180px">
               <v-img
-                  src="https://aoanwebvue.oss-cn-beijing.aliyuncs.com/assets/home/news/2.png?Expires=1610620114&OSSAccessKeyId=TMP.3KhjyNezPEPQvqBw86eX6FLsnVU934q2bwQMvKstH3Ga6BhRkKxJRBXS21ffDyxxNL8C6VNULXYka96xSstY4QkMXCyFH9&Signature=oYv82NuZ5pDlW46JjwgZIHxz4kA%3D&versionId=CAEQCxiBgMDsoO6AuBciIDk4YjFjZmVjZWVlMjQxOGI4ZjA4OGQ1NTU5YTU2NmY1&response-content-type=application%2Foctet-stream"
+                  src="https://aoanwebvue.oss-cn-beijing.aliyuncs.com/assets/home/news/2.png?"
                 style="height: 100%"
               ></v-img>
             </v-card>
@@ -47,15 +47,14 @@
           <v-col sm="4" lg="12">
             <v-card style="height:180px">
               <v-img
-                src="https://aoanwebvue.oss-cn-beijing.aliyuncs.com/assets/home/news/3.png?Expires=1610620126&OSSAccessKeyId=TMP.3KhjyNezPEPQvqBw86eX6FLsnVU934q2bwQMvKstH3Ga6BhRkKxJRBXS21ffDyxxNL8C6VNULXYka96xSstY4QkMXCyFH9&Signature=Z8bGvE3AYJJ4gwCgHzgC%2FCo1Pdg%3D&versionId=CAEQCxiBgMCyne6AuBciIDBlNmMxNjVhNTdjZDQxZWY4Yzc4NWZmNTAwMzc4ZGEy&response-content-type=application%2Foctet-stream"
-                style="height: 100%"
+                src="https://aoanwebvue.oss-cn-beijing.aliyuncs.com/assets/home/news/3.png?"
               ></v-img>
             </v-card>
           </v-col>
           <v-col sm="4" lg="12">
             <v-card style="height:180px">
               <v-img
-                src="https://aoanwebvue.oss-cn-beijing.aliyuncs.com/assets/home/news/4.png?Expires=1610620137&OSSAccessKeyId=TMP.3KhjyNezPEPQvqBw86eX6FLsnVU934q2bwQMvKstH3Ga6BhRkKxJRBXS21ffDyxxNL8C6VNULXYka96xSstY4QkMXCyFH9&Signature=YKqdklkEPeXrp%2Fhs9iFvTltJYZA%3D&versionId=CAEQCxiBgMDEne6AuBciIDQ4MTJmZjk3NmI2ZTRhYjU4Njg2NmYxOTJiYmFhMTRh&response-content-type=application%2Foctet-stream"
+                src="https://aoanwebvue.oss-cn-beijing.aliyuncs.com/assets/home/news/4.png?"
                 style="height: 100%"
               >
               </v-img>

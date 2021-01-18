@@ -95,19 +95,19 @@ export default {
       model: 0, //绑定轮播图
       bannerList: [
         {
-           src:"https://aoanwebvue.oss-cn-beijing.aliyuncs.com/assets/home/solutions/jgcl.png?Expires=1610620889&OSSAccessKeyId=TMP.3KhjyNezPEPQvqBw86eX6FLsnVU934q2bwQMvKstH3Ga6BhRkKxJRBXS21ffDyxxNL8C6VNULXYka96xSstY4QkMXCyFH9&Signature=ZhGhmL5HkfiT4dkMsEcE8j9QCgo%3D&versionId=CAEQCxiBgICE9omBuBciIDE4YTVkZDdmMTU5MTQ4OTZhYjZjYTc4Y2NhYmZiMmIx&response-content-type=application%2Foctet-stream",
+           src:"https://aoanwebvue.oss-cn-beijing.aliyuncs.com/assets/home/solutions/jgcl.png?",
           id: 1,
         },
         {
-           src:"https://aoanwebvue.oss-cn-beijing.aliyuncs.com/assets/home/solutions/jzdw.png?Expires=1610620902&OSSAccessKeyId=TMP.3KhjyNezPEPQvqBw86eX6FLsnVU934q2bwQMvKstH3Ga6BhRkKxJRBXS21ffDyxxNL8C6VNULXYka96xSstY4QkMXCyFH9&Signature=JOlaYslhGUUlSWSQMwW6epAzPBc%3D&versionId=CAEQCxiBgIDA.4mBuBciIGE1MGMxNmZiZTljYTRlNDNhYzRhZDA4Zjc1YjM5NDA4&response-content-type=application%2Foctet-stream",
+           src:"https://aoanwebvue.oss-cn-beijing.aliyuncs.com/assets/home/solutions/jzdw.png?",
           id: 2,
         },
         {
-           src:"https://aoanwebvue.oss-cn-beijing.aliyuncs.com/assets/home/solutions/sndw.png?Expires=1610620911&OSSAccessKeyId=TMP.3KhjyNezPEPQvqBw86eX6FLsnVU934q2bwQMvKstH3Ga6BhRkKxJRBXS21ffDyxxNL8C6VNULXYka96xSstY4QkMXCyFH9&Signature=B0FbaaU0RaUyGQpC1y7sU6NxPJI%3D&versionId=CAEQCxiBgIDF9omBuBciIGI2Y2I0MTlkMzNkNzRlMThhYjY3MmI2ZWEwMGRmYWNm&response-content-type=application%2Foctet-stream",
+           src:"https://aoanwebvue.oss-cn-beijing.aliyuncs.com/assets/home/solutions/sndw.png?",
           id: 3,
         },
         {
-           src:"https://aoanwebvue.oss-cn-beijing.aliyuncs.com/assets/home/solutions/wrj.png?Expires=1610620932&OSSAccessKeyId=TMP.3KhjyNezPEPQvqBw86eX6FLsnVU934q2bwQMvKstH3Ga6BhRkKxJRBXS21ffDyxxNL8C6VNULXYka96xSstY4QkMXCyFH9&Signature=yIjN2oNd1NmUNnLzCkVeQk0Kmko%3D&versionId=CAEQCxiBgMDZ9omBuBciIDQwNDJkMDE4YTdhYTRlYjc5NjhmZmY3YjlkNTc4YjA2&response-content-type=application%2Foctet-stream",
+           src:"https://aoanwebvue.oss-cn-beijing.aliyuncs.com/assets/home/solutions/wrj.png?",
           id: 4,
         },
       ],

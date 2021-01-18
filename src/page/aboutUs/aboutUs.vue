@@ -2,7 +2,7 @@
   <v-container class="pa-0" fluid>
     <!-- 这是小导航栏 -->
     <v-img
-      src="https://aoanwebvue.oss-cn-beijing.aliyuncs.com/assets/aboutUs/shitou.jpg?Expires=1610695058&OSSAccessKeyId=TMP.3KigYQ5mW24ziH8JB2qYhY1B8xmiLWx5kcLLt4BPN7gyE6vHFRuSpoBrZ2Hz6CHwircxV2bEppzzHkdRk87JKmyf1cg2Pd&Signature=qVBLG3bsfaphNija4AauiVofxcU%3D&versionId=CAEQCxiBgMCW4aiAuBciIDkzZDdhYmEwMTk3NDQ5ODQ5NTI3MmQ2ZWYxYjkwNmMx&response-content-type=application%2Foctet-stream"
+      src="https://aoanwebvue.oss-cn-beijing.aliyuncs.com/assets/aboutUs/shitou.jpg?"
       :aspect-ratio="3"
       class="white--text"
     >
@@ -89,7 +89,7 @@
         <v-col cols="12" md="5" class="pa-3">
           <v-img
             :aspect-ratio="2"
-            src="https://aoanwebvue.oss-cn-beijing.aliyuncs.com/assets/aboutUs/table.jpg?Expires=1610617786&OSSAccessKeyId=TMP.3KhjyNezPEPQvqBw86eX6FLsnVU934q2bwQMvKstH3Ga6BhRkKxJRBXS21ffDyxxNL8C6VNULXYka96xSstY4QkMXCyFH9&Signature=oaF56WdwyeM0u%2Fz8g2ZwbvmRAnQ%3D&versionId=CAEQCxiBgMDX4aiAuBciIDhkZmU5ZTY0YTBlYTRkY2Q4ZWQ4MmQ4NmI4ZjVmMDY1&response-content-type=application%2Foctet-stream"
+            src="https://aoanwebvue.oss-cn-beijing.aliyuncs.com/assets/aboutUs/table.jpg?"
           ></v-img>
         </v-col>
       </v-row>
@@ -156,7 +156,7 @@
         <v-col cols="10" md=6 offset="1" offset-md="3">
           <v-img
             :aspect-ratio="2"
-            src="https://aoanwebvue.oss-cn-beijing.aliyuncs.com/assets/aboutUs/map.png?Expires=1610695116&OSSAccessKeyId=TMP.3KigYQ5mW24ziH8JB2qYhY1B8xmiLWx5kcLLt4BPN7gyE6vHFRuSpoBrZ2Hz6CHwircxV2bEppzzHkdRk87JKmyf1cg2Pd&Signature=a9310TitPA7IwpYm5kwWr9CBojY%3D&versionId=CAEQCxiBgMCY4aiAuBciIDE4ZDBiNWRiY2Q0ZTQwNTJhMmMyMDBlNjg3N2I0MzAz&response-content-type=application%2Foctet-stream"
+            src="https://aoanwebvue.oss-cn-beijing.aliyuncs.com/assets/aboutUs/map.png?"
           ></v-img>
         </v-col>
       </v-row>
