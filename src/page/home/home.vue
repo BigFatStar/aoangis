@@ -10,6 +10,7 @@
       :show-arrows="false"
       delimiter-icon="mdi-minus"
       height="100%"
+      :aspect-ratio="15/7"
     >
       <v-carousel-item v-for="(item, i) in items" :key="i" :src="item.src" :aspect-ratio="15/7">
       </v-carousel-item>
@@ -34,16 +35,16 @@ export default {
       items: [
         {
           src:
+            "https://aoanwebvue.oss-cn-beijing.aliyuncs.com/assets/home/banner/1111.png?",
+        },
+        {
+          src:
             "https://aoanwebvue.oss-cn-beijing.aliyuncs.com/assets/home/banner/newyear.png?",
         },
-        {
-          src:
-            "https://aoanwebvue.oss-cn-beijing.aliyuncs.com/assets/home/banner/tiao.png?",
-        },
-        {
-          src:
-            "https://aoanwebvue.oss-cn-beijing.aliyuncs.com/assets/home/banner/2.png?",
-        },
+        // {
+        //   src:
+        //     "https://aoanwebvue.oss-cn-beijing.aliyuncs.com/assets/home/banner/bt.png?",
+        // },  
         {
           src:
             "https://aoanwebvue.oss-cn-beijing.aliyuncs.com/assets/home/banner/4.png?",

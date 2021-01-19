@@ -1,13 +1,32 @@
 <template>
   <v-container class="pa-0" fluid>
-    <!-- 这是小导航栏 -->
-    <v-img
-      src="https://aoanwebvue.oss-cn-beijing.aliyuncs.com/assets/aboutUs/shitou.jpg?"
-      :aspect-ratio="3"
-      class="white--text"
-    >
-      <!-- <v-card-title class="text-h4  align-left-center flex-column">未来时刻</v-card-title> -->
-    </v-img>
+    <v-card>
+      <v-img
+        src="https://aoanwebvue.oss-cn-beijing.aliyuncs.com/assets/home/banner/bt.png?"
+        :aspect-ratio="3"
+        class="white--text"
+        >
+        <!-- <v-card-title>有一门科学技术。测绘学 有一门学科，叫科学。
+        </v-card-title>
+        <v-card-title>有一门技术，叫科学技术。 </v-card-title>
+        <v-card-title>有一门科学技术，叫测绘学。 </v-card-title>
+        <v-card-title>有一伙人，就在我们身边。 </v-card-title>
+        <v-card-text>
+          时常，我们也很迷茫。 民工？技术员？建库的？程序员？
+          我们是运用科学技术的人。 成家了。 你家。 就是。科学家。
+        </v-card-text>
+        <v-card-text>
+          (电脑。全家最重要、最宝贵的是电脑数据。
+          一堆外人看不懂的仪器、棍子。高科技的样子。)
+        </v-card-text>
+        <v-card-text>
+          怎么样？科学家！ 运用科学技术的人。测绘人。 扶尺你、看仪器的组长。
+          无人机、搞设计的。 建立库的地信
+          医学、遥感、经济、甚至人工智能
+          </v-card-text> -->
+      </v-img>
+    </v-card>
+
     <!-- <v-app-bar flat class="grey lighten-5" inverted-scroll>
       <v-tabs show-arrows centered>
         <v-tab v-for="link in links" :key="link.id" >
@@ -153,7 +172,7 @@
         >联系我们</v-card-text
       >
       <v-row>
-        <v-col cols="10" md=6 offset="1" offset-md="3">
+        <v-col cols="10" md="6" offset="1" offset-md="3">
           <v-img
             :aspect-ratio="2"
             src="https://aoanwebvue.oss-cn-beijing.aliyuncs.com/assets/aboutUs/map.png?"
@@ -161,32 +180,46 @@
         </v-col>
       </v-row>
       <v-row no-gutters class="my-3">
-        <v-col cols="3" md=2 offset-md="3" offset="1">
-          <v-card-text  class="text-center text-md-subtitle-1 text-caption pa-0">业务电话</v-card-text >
-          <v-card-text  class="text-center text-md-subtitle-1 text-caption pa-0">15678945647</v-card-text >
+        <v-col cols="3" md="2" offset-md="3" offset="1">
+          <v-card-text class="text-center text-md-subtitle-1 text-caption pa-0"
+            >业务电话</v-card-text
+          >
+          <v-card-text class="text-center text-md-subtitle-1 text-caption pa-0"
+            >15678945647</v-card-text
+          >
         </v-col>
         <v-divider vertical></v-divider>
-        <v-col cols="3" md=2>
-          <v-card-text  class="text-center text-md-subtitle-1 text-caption pa-0">人事电话</v-card-text >
-          <v-card-text  class="text-center text-md-subtitle-1 text-caption pa-0">15698745632</v-card-text >
+        <v-col cols="3" md="2">
+          <v-card-text class="text-center text-md-subtitle-1 text-caption pa-0"
+            >人事电话</v-card-text
+          >
+          <v-card-text class="text-center text-md-subtitle-1 text-caption pa-0"
+            >15698745632</v-card-text
+          >
         </v-col>
         <v-divider vertical></v-divider>
-        <v-col cols="4" md=2>
-          <v-card-text  class="text-center text-md-subtitle-1 text-caption pa-0">邮箱</v-card-text >
-          <v-card-text  class="text-center text-md-subtitle-1 text-caption pa-0">1457921@1555.com</v-card-text >
+        <v-col cols="4" md="2">
+          <v-card-text class="text-center text-md-subtitle-1 text-caption pa-0"
+            >邮箱</v-card-text
+          >
+          <v-card-text class="text-center text-md-subtitle-1 text-caption pa-0"
+            >1457921@1555.com</v-card-text
+          >
         </v-col>
       </v-row>
       <v-row>
-        <v-col cols="12" md=6 offset-md="3" >
-          <v-card-text  class="text-md-h6 text-subtitle-1 px-md-0">江西未来时刻科技有限公司</v-card-text >
-          <v-card-text  class="mt-n8 mt-md-n6 text-caption text-md-body-2 px-md-0 my-10">
+        <v-col cols="12" md="6" offset-md="3">
+          <v-card-text class="text-md-h6 text-subtitle-1 px-md-0"
+            >江西未来时刻科技有限公司</v-card-text
+          >
+          <v-card-text
+            class="mt-n8 mt-md-n6 text-caption text-md-body-2 px-md-0 my-10"
+          >
             公司地址：江西省九江市永修县垒旺六合城孵化器A101
-          </v-card-text >
+          </v-card-text>
         </v-col>
       </v-row>
     </v-card>
-
-
   </v-container>
 </template>
 <script>

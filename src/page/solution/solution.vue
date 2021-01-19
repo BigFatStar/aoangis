@@ -1,7 +1,7 @@
 <template>
   <v-container fluid class="pa-0">
    
-      <v-img  src="https://aoanwebvue.oss-cn-beijing.aliyuncs.com/assets/home/news/6.jpg?"
+      <v-img  src="https://aoanwebvue.oss-cn-beijing.aliyuncs.com/assets/news/tech-5090539_1920.jpg?"
       aspect-ratio="3"></v-img>
     <div class="text-center my-4">
       <h2 class="text-h4 pa-2">专业专注，精益求精</h2>
