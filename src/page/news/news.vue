@@ -3,7 +3,7 @@
     <v-card>
       <v-img
         src="https://aoanwebvue.oss-cn-beijing.aliyuncs.com/assets/news/smart.jpg?"
-        :aspect-ratio="15/6"
+        :aspect-ratio="3"
         class="grey lighten-2 d-flex align-center"
       >
         <v-row>

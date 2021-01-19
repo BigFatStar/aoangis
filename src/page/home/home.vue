@@ -38,7 +38,7 @@ export default {
         },
         {
           src:
-            "https://aoanwebvue.oss-cn-beijing.aliyuncs.com/assets/home/banner/shuju1.png?",
+            "https://aoanwebvue.oss-cn-beijing.aliyuncs.com/assets/home/banner/tiao.png?",
         },
         {
           src:

@@ -95,19 +95,19 @@ export default {
       model: 0, //绑定轮播图
       bannerList: [
         {
-           src:"https://aoanwebvue.oss-cn-beijing.aliyuncs.com/assets/home/solutions/jgcl.png?",
+           src:"https://aoanwebvue.oss-cn-beijing.aliyuncs.com/assets/home/solutions/wrj.png?",
           id: 1,
         },
         {
-           src:"https://aoanwebvue.oss-cn-beijing.aliyuncs.com/assets/home/solutions/jzdw.png?",
+           src:"https://aoanwebvue.oss-cn-beijing.aliyuncs.com/assets/home/solutions/jgcl.png?",
           id: 2,
         },
         {
-           src:"https://aoanwebvue.oss-cn-beijing.aliyuncs.com/assets/home/solutions/sndw.png?",
+           src:"https://aoanwebvue.oss-cn-beijing.aliyuncs.com/assets/home/solutions/sss.jpg?",
           id: 3,
         },
         {
-           src:"https://aoanwebvue.oss-cn-beijing.aliyuncs.com/assets/home/solutions/wrj.png?",
+           src:"https://aoanwebvue.oss-cn-beijing.aliyuncs.com/assets/home/solutions/sndw.png?",
           id: 4,
         },
       ],
