@@ -1,5 +1,5 @@
 <template>
-  <v-container fluid>
+  <v-container fluid class="pa-0">
    
       <v-img  src="https://aoanwebvue.oss-cn-beijing.aliyuncs.com/assets/home/news/6.jpg?"
       aspect-ratio="3"></v-img>

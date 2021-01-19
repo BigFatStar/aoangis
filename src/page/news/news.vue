@@ -1,9 +1,9 @@
 <template>
-  <v-container fluid>
+  <v-container fluid class="pa-0">
     <v-card>
       <v-img
-        src="https://img95.699pic.com/photo/40102/8199.jpg_wh300.jpg"
-        aspect-ratio="3"
+        src="https://aoanwebvue.oss-cn-beijing.aliyuncs.com/assets/news/smart.jpg?"
+        :aspect-ratio="15/6"
         class="grey lighten-2 d-flex align-center"
       >
         <v-row>
