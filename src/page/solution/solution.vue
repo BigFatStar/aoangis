@@ -1,7 +1,8 @@
 <template>
-  <v-container fluid>
+  <v-container fluid class="pa-0">
    
-      <v-img :src="require('@/assets/home/news/6.jpg')" aspect-ratio="3"></v-img>
+      <v-img  src="https://aoanwebvue.oss-cn-beijing.aliyuncs.com/assets/news/tech-5090539_1920.jpg?"
+      aspect-ratio="3"></v-img>
     <div class="text-center my-4">
       <h2 class="text-h4 pa-2">专业专注，精益求精</h2>
       <h3 class="text-subtitle-1 pa-2">为行业持续提供优质的解决方案</h3>
@@ -43,17 +44,17 @@ export default {
           id: 1,
           picList: [
             {
-              src: require("@/assets/solution/1.png"),
+              src:"https://aoanwebvue.oss-cn-beijing.aliyuncs.com/assets/solution/1.png?",
               title: "无人机倾斜三维摄影测量",
               subTitle: "三维地形测绘"
             },
             {
-              src: require("@/assets/solution/7.png"),
+              src:"https://aoanwebvue.oss-cn-beijing.aliyuncs.com/assets/solution/7.png?",
               title: "专业的无人机航空测量方案",
               subTitle: "地形图测绘"
             },
             {
-              src: require("@/assets/solution/8.png"),
+               src:"https://aoanwebvue.oss-cn-beijing.aliyuncs.com/assets/solution/8.png?",
               title: "北京市某地区地质灾害航飞项目",
               subTitle: "地质灾害航飞"
             }
@@ -64,7 +65,7 @@ export default {
           id: 2,
           picList: [
             {
-              src: require("@/assets/solution/2.png"),
+               src:"https://aoanwebvue.oss-cn-beijing.aliyuncs.com/assets/solution/2.png?",
               title: "移动测量系统大比例尺地形图测绘",
               subTitle: "推动城市信息化建设新型项目"
             }
@@ -75,7 +76,7 @@ export default {
           id: 3,
           picList: [
             {
-              src: require("@/assets/solution/3.png"),
+              src:"https://aoanwebvue.oss-cn-beijing.aliyuncs.com/assets/solution/3.png?",
               title: "引领新的三维数据革命",
               subTitle: "室内数字化及定位导航系统"
             }
@@ -86,7 +87,7 @@ export default {
           id: 4,
           picList: [
             {
-              src: require("@/assets/solution/4.png"),
+               src:"https://aoanwebvue.oss-cn-beijing.aliyuncs.com/assets/solution/4.png?",
               title: "电力行业解决方案",
               subTitle: "致力于电力行业信息化"
             }
@@ -97,7 +98,7 @@ export default {
           id: 5,
           picList: [
             {
-              src: require("@/assets/solution/5.png"),
+              src:"https://aoanwebvue.oss-cn-beijing.aliyuncs.com/assets/solution/5.png?",
               title: "精密检测多行业应用解决方案",
               subTitle: "为行业提供优质的解决方案"
             }
@@ -108,7 +109,7 @@ export default {
           id: 6,
           picList: [
             {
-              src: require("@/assets/solution/6.png"),
+              src:"https://aoanwebvue.oss-cn-beijing.aliyuncs.com/assets/solution/6.png?",
               title: "轨道交通精密测量",
               subTitle:
                 "面向高速铁路、城市轨道和城际轨道三大领域的智慧施工、大数据管理、智慧运维"

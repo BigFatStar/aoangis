@@ -2,19 +2,20 @@
   *官网首页
  */
 <template>
-  <v-container fluid>
-    <v-row>
-      <v-col cols="12">
-        <v-carousel hide-delimiters cycle height="100%">
-          <v-carousel-item
-            :aspect-ratio="16 / 7"
-            v-for="(item, i) in items"
-            :key="i"
-            :src="item.src"
-          ></v-carousel-item>
-        </v-carousel>
-      </v-col>
-    </v-row>
+  <v-container fluid class="pa-0">
+    <v-carousel
+      cycle
+      dark
+      hide-delimiter-background
+      :show-arrows="false"
+      delimiter-icon="mdi-minus"
+      height="100%"
+      :aspect-ratio="15/7"
+    >
+      <v-carousel-item v-for="(item, i) in items" :key="i" :src="item.src" :aspect-ratio="15/7">
+      </v-carousel-item>
+    </v-carousel>
+
     <!-- 新闻中心组件 -->
     <news />
     <!-- 解决方案组件 -->
@@ -29,19 +30,25 @@ export default {
   components: { news, solutions },
   data() {
     return {
+      overlay: true,
       // 轮播图
       items: [
         {
-          src: require("@/assets/home/banner/1.png"),
+          src:
+            "https://aoanwebvue.oss-cn-beijing.aliyuncs.com/assets/home/banner/newyear.png?",
         },
         {
-          src: require("@/assets/home/banner/2.png"),
+          src:
+            "https://aoanwebvue.oss-cn-beijing.aliyuncs.com/assets/home/banner/1111.png?",
         },
+        
+        // {
+        //   src:
+        //     "https://aoanwebvue.oss-cn-beijing.aliyuncs.com/assets/home/banner/bt.png?",
+        // },  
         {
-          src: require("@/assets/home/banner/3.png"),
-        },
-        {
-          src: require("@/assets/home/banner/4.png"),
+          src:
+            "https://aoanwebvue.oss-cn-beijing.aliyuncs.com/assets/home/banner/4.png?",
         },
       ],
     };

@@ -13,6 +13,7 @@ import newsDetail from "./modules/newsDetail";
 import taskSystems from "./modules/task_systems"
 import aboutUs from "./modules/aboutUs";
 import order from "./modules/order";
+import jm from "./modules/jm";
 Vue.use(Router);
 // 这是一个路由管理的模块，是各个路由的出口
 const router = new Router({
@@ -21,6 +22,7 @@ const router = new Router({
     aboutUs,
     home,
     news,
+    jm,
     // auth,
     // login,
     solution,

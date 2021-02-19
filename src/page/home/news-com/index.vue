@@ -12,7 +12,7 @@
       <v-col cols="12" sm="6" md="6" lg="4" >
         <v-img
           :aspect-ratio="16 / 9"
-          :src="require('@/assets/home/news/1.png')"
+          src="https://aoanwebvue.oss-cn-beijing.aliyuncs.com/assets/home/news/1.png?"
         ></v-img>
         <h3 class="mx-5 title my-16 text-h5 text-sm-h4">地球科学研究院召开工作研讨会</h3>
         <div class="text-h6 text-sm-h5 mb-5 mx-5" @click="handleClick(10)" id="xq">
@@ -39,7 +39,7 @@
           <v-col sm="4" lg="12">
             <v-card style="height:180px">
               <v-img
-                 :src="require('@/assets/home/news/2.png')"
+                  src="https://aoanwebvue.oss-cn-beijing.aliyuncs.com/assets/home/news/2.png?"
                 style="height: 100%"
               ></v-img>
             </v-card>
@@ -47,15 +47,14 @@
           <v-col sm="4" lg="12">
             <v-card style="height:180px">
               <v-img
-               :src="require('@/assets/home/news/3.png')"
-                style="height: 100%"
+                src="https://aoanwebvue.oss-cn-beijing.aliyuncs.com/assets/home/news/3.png?"
               ></v-img>
             </v-card>
           </v-col>
           <v-col sm="4" lg="12">
             <v-card style="height:180px">
               <v-img
-               :src="require('@/assets/home/news/4.png')"
+                src="https://aoanwebvue.oss-cn-beijing.aliyuncs.com/assets/home/news/4.png?"
                 style="height: 100%"
               >
               </v-img>
