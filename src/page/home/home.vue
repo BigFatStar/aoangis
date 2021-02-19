@@ -35,12 +35,13 @@ export default {
       items: [
         {
           src:
-            "https://aoanwebvue.oss-cn-beijing.aliyuncs.com/assets/home/banner/1111.png?",
+            "https://aoanwebvue.oss-cn-beijing.aliyuncs.com/assets/home/banner/newyear.png?",
         },
         {
           src:
-            "https://aoanwebvue.oss-cn-beijing.aliyuncs.com/assets/home/banner/newyear.png?",
+            "https://aoanwebvue.oss-cn-beijing.aliyuncs.com/assets/home/banner/1111.png?",
         },
+        
         // {
         //   src:
         //     "https://aoanwebvue.oss-cn-beijing.aliyuncs.com/assets/home/banner/bt.png?",
