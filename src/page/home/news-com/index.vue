@@ -18,6 +18,11 @@
         <div class="text-h6 text-sm-h5 mb-5 mx-5" @click="handleClick(10)" id="xq">
           查看详情 ->
         </div>
+        <div class="text-h6 text-sm-h5 mb-5 mx-5">
+        <v-btn depressed @click="send">
+       联系我们
+      </v-btn>
+      </div>
       </v-col>
       <!-- 新闻列表 -->
       <v-col cols="12" sm="6" md="6" lg="5">
@@ -84,6 +89,9 @@ export default {
   methods: {
      handleClick(id){
        this.$router.push({path:'/newsDetail', query:{id}});
+     },
+     send(){
+      this.$router.push({path:'/mail'});
      }
   }
 };

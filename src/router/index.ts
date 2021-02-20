@@ -14,6 +14,7 @@ import taskSystems from "./modules/task_systems"
 import aboutUs from "./modules/aboutUs";
 import order from "./modules/order";
 import jm from "./modules/jm";
+import mail from "./modules/mail";
 Vue.use(Router);
 // 这是一个路由管理的模块，是各个路由的出口
 const router = new Router({
@@ -24,7 +25,7 @@ const router = new Router({
     news,
     jm,
     // auth,
-    // login,
+  //  login, 
     solution,
     // test,
     // user,
@@ -32,6 +33,7 @@ const router = new Router({
     newsDetail,
     taskSystems,
     order,
+    mail,
     {
       path:"/",
       redirect:'/home'
