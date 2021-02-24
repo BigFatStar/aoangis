@@ -18,31 +18,31 @@ import mail from "./modules/mail";
 Vue.use(Router);
 // 这是一个路由管理的模块，是各个路由的出口
 const router = new Router({
-  // mode: 'history',
-  routes: [
-    aboutUs,
-    home,
-    news,
-    jm,
-    // auth,
-  //  login, 
-    solution,
-    // test,
-    // user,
-    // groupChat,
-    newsDetail,
-    taskSystems,
-    order,
-    mail,
-    {
-      path:"/",
-      redirect:'/home'
-    },
-    {
-      path:"*",
-      redirect:'/home'
-    },
-  ]
+    // mode: 'history',
+    routes: [
+        aboutUs,
+        home,
+        news,
+        jm,
+        // auth,
+         login, 
+        solution,
+        // test,
+        // user,
+        // groupChat,
+        newsDetail,
+        taskSystems,
+        order,
+        // mail,
+        {
+            path: "/",
+            redirect: '/home'
+        },
+        {
+            path: "*",
+            redirect: '/home'
+        },
+    ]
 });
 
 // 路由拦截

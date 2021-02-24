@@ -7,6 +7,87 @@
         </h2>
       </v-col>
     </v-row>
+      <!-- 侧边栏 -->
+    <div id="slider">
+    <v-row>
+   <div class="text-center" >
+    <v-dialog
+      v-model="dialog"
+      width="500"
+    >
+      <template v-slot:activator="{ on, attrs }">
+        <v-btn
+          depressed
+          v-bind="attrs"
+          v-on="on"
+        >
+          联系我们
+        </v-btn>
+      </template>
+
+      <v-card>
+        <v-card-title class="headline grey lighten-2">
+          发送邮件
+        </v-card-title>
+         <v-divider></v-divider>
+        <!-- <v-row class="my-16">
+    <v-col cols="6" md="4" offset="2" sm="8" offset-sm="4" offset-md="6"> -->
+    <v-form  ref="form" v-model="valid" lazy-validation>
+        <v-text-field
+      v-model="subject"
+      required
+       :rules="subjectRules"
+      label="姓名（联系方式）"
+    ></v-text-field>
+        <v-text-field
+      v-model="content"
+       required
+       :rules="contentRules"
+      label="内容"
+    ></v-text-field>
+        <!-- <v-text-field
+      v-model="text"
+      required
+      label="备注"
+    ></v-text-field> -->
+    <v-card-actions>
+          <v-spacer></v-spacer>
+           <v-btn
+      class="mr-4"
+      @click="submit"
+    >
+      提交
+    </v-btn>
+    <v-btn @click="reset">
+      取消
+    </v-btn>
+        </v-card-actions>
+  </v-form >
+<!-- </v-col>
+</v-row> -->
+  <v-btn @click="test()">test</v-btn>
+      </v-card>
+    </v-dialog>
+      </div>
+  </v-row>
+<v-row >
+ <div class="text-center d-flex align-center justify-space-around">
+    <v-tooltip left>
+      <template v-slot:activator="{ on, attrs }">
+        <v-btn
+          depressed
+          v-bind="attrs"
+          v-on="on"
+        >
+       邮箱地址
+        </v-btn>
+      </template>
+      <span>1457921@1555.com</span>
+    </v-tooltip>
+  </div>
+</v-row>
+</div>
+
     <v-row>
       <!-- 主图片 -->
       <v-col cols="12" sm="6" md="6" lg="4" >
@@ -18,11 +99,7 @@
         <div class="text-h6 text-sm-h5 mb-5 mx-5" @click="handleClick(10)" id="xq">
           查看详情 ->
         </div>
-        <div class="text-h6 text-sm-h5 mb-5 mx-5">
-        <v-btn depressed @click="send">
-       联系我们
-      </v-btn>
-      </div>
+
       </v-col>
       <!-- 新闻列表 -->
       <v-col cols="12" sm="6" md="6" lg="5">
@@ -68,13 +145,37 @@
         </v-row>
       </v-col>
     </v-row>
+  
   </v-container>
 </template>
 
 <script>
+import { validationMixin } from 'vuelidate'
+import { required, maxLength, email } from 'vuelidate/lib/validators'
+import axios, { AxiosInstance, AxiosRequestConfig, Method } from "axios";
+
 export default {
+    mixins: [validationMixin],
+    validations: {
+    //   name: { required, maxLength: maxLength(20) },
+    email: { required, email },
+    //   subject: { required, subject },
+    //   text: { required, text },
+    //   content: { required, content },
+    },
   data() {
     return {
+      dialog: false,
+      subject:'',
+    //   text:'',
+      content:'',
+      items: [
+        'Item 1',
+        'Item 2',
+        'Item 3',
+        'Item 4',
+        'Item 5',
+      ],
       selectedItem: 0,
       newsList: [
         { text: "45年來3次測量 珠峰長高了",time:"2020/12/10",id:0 },
@@ -84,15 +185,52 @@ export default {
         { text: "青海地质测绘院拓展省外市场",time:"2020-12-23",id:4 },
         { text: "黑龙江省开展测绘统计网络培训",time:"2020-12-24",id:5 },
       ],
+       subjectRules: [
+        v => !!v || '此选项必填',
+      ],
+       contentRules: [
+        v => !!v || '此选项必填',
+      ],
     };
   },
   methods: {
+    test() {
+      this.subject='从的萨芬的萨芬';
+    //   this.text='法大师傅十分大师傅士大夫但是';
+      this.content='我们要接你的单子'
+    },
      handleClick(id){
        this.$router.push({path:'/newsDetail', query:{id}});
      },
      send(){
       this.$router.push({path:'/mail'});
-     }
+     },
+
+      submit () {
+      axios({
+        method:'post',
+        url:'api/mail/sendmail',
+        // responseType:'stream',
+        data: {
+         "subject":this.subject,
+        //  "text":this.text,
+         "content":this.content
+        },
+         headers: {
+        "Content-Type": "application/json",
+      },
+      })
+      .then(function(response) {
+       return response.data
+      })
+      .catch(function(error){
+          console.log(error)
+      });
+      
+      },
+      reset () {
+        this.$refs.form.reset()
+      },
   }
 };
 </script>
@@ -103,5 +241,11 @@ export default {
     &:hover{
       color:red;
     } 
+  }
+  #slider{
+      position: fixed;
+      z-index: 999;
+      right:0;
+      top:90%
   }
 </style>

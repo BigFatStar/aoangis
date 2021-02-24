@@ -203,7 +203,7 @@
             >邮箱</v-card-text
           >
           <v-card-text class="text-center text-md-subtitle-1 text-caption pa-0"
-            >1457921@1555.com</v-card-text
+            >389142261@qq.com</v-card-text
           >
         </v-col>
       </v-row>
