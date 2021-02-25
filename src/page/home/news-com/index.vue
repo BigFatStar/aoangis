@@ -17,11 +17,14 @@
     >
       <template v-slot:activator="{ on, attrs }">
         <v-btn
-          depressed
+          class="mx-2" 
+          fab
+          dark
+          color="grey"
           v-bind="attrs"
           v-on="on"
         >
-          联系我们
+          联系<br>我们
         </v-btn>
       </template>
 
@@ -75,14 +78,17 @@
     <v-tooltip left>
       <template v-slot:activator="{ on, attrs }">
         <v-btn
-          depressed
+          class="mx-2"
+          fab
+          dark
+          color="grey"
           v-bind="attrs"
           v-on="on"
         >
-       邮箱地址
+       邮箱<br>地址
         </v-btn>
       </template>
-      <span>1457921@1555.com</span>
+      <span>389142261@qq.com</span>
     </v-tooltip>
   </div>
 </v-row>
@@ -252,10 +258,6 @@ export default {
       position: fixed;
       z-index: 999;
       right:0;
-      top:90%
+      top:87%
   }
-//    .custom-loader {
-//     animation: loader 1s infinite;
-//     display: flex;
-//   }
 </style>
