@@ -36,13 +36,13 @@
         <v-text-field
       v-model="subject"
       required
-       :rules="subjectRules"
+      :rules="subjectRules"
       label="姓名（联系方式）"
     ></v-text-field>
         <v-text-field
       v-model="content"
-       required
-       :rules="contentRules"
+      required
+      :rules="contentRules"
       label="内容"
     ></v-text-field>
         <!-- <v-text-field
@@ -165,17 +165,12 @@ export default {
     },
   data() {
     return {
+      loader: null,
+      loading: false,
       dialog: false,
       subject:'',
     //   text:'',
       content:'',
-      items: [
-        'Item 1',
-        'Item 2',
-        'Item 3',
-        'Item 4',
-        'Item 5',
-      ],
       selectedItem: 0,
       newsList: [
         { text: "45年來3次測量 珠峰長高了",time:"2020/12/10",id:0 },
@@ -207,6 +202,7 @@ export default {
      },
 
       submit () {
+      this.$refs.form.validate()
       axios({
         method:'post',
         url:'api/mail/sendmail',
@@ -226,11 +222,21 @@ export default {
       .catch(function(error){
           console.log(error)
       });
-      
       },
+// 
       reset () {
         this.$refs.form.reset()
       },
+    //   watch: {
+    //   loader () {
+    //     const l = this.loader
+    //     this[l] = !this[l]
+
+    //     setTimeout(() => (this[l] = false), 3000)
+
+    //     this.loader = null
+    //   },
+    // },
   }
 };
 </script>
@@ -248,4 +254,8 @@ export default {
       right:0;
       top:90%
   }
+//    .custom-loader {
+//     animation: loader 1s infinite;
+//     display: flex;
+//   }
 </style>
