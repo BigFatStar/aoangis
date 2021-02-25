@@ -15,7 +15,10 @@
         </v-btn>
       </v-col>
       <v-col class="py-4 text-center" cols="12">
-        {{ new Date().getFullYear() }} — <strong>FutureTime</strong>
+        {{ new Date().getFullYear() }} —   <strong>敖岸测绘</strong>
+        <v-row justify="center" no-gutters>
+         <strong>敖岸测绘官网    赣ICP备2021000</strong>
+        </v-row>
       </v-col>
     </v-row>
   </v-footer>
