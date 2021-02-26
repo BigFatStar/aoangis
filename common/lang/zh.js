@@ -6,6 +6,7 @@ export const lang = {
     newCenter: "新闻中心",
     totalSolution:"解决方案",
     aboutUs: "关于我们",
+    enjoyus:"加入我们",
     cutLanguage: "切换语言"
   },
 };

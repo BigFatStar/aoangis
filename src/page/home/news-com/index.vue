@@ -10,7 +10,7 @@
       <!-- 侧边栏 -->
     <div id="slider">
     <v-row>
-   <div class="text-center" >
+   <!-- <div class="text-center" >
     <v-dialog
       v-model="dialog"
       width="500"
@@ -26,16 +26,18 @@
         >
           联系<br>我们
         </v-btn>
-      </template>
-
-      <v-card>
-        <v-card-title class="headline grey lighten-2">
+      </template> -->
+      <v-card >
+        <!-- <v-card-title class="headline grey lighten-2">
           发送邮件
         </v-card-title>
-         <v-divider></v-divider>
+         <v-divider></v-divider> -->
         <!-- <v-row class="my-16">
     <v-col cols="6" md="4" offset="2" sm="8" offset-sm="4" offset-md="6"> -->
     <v-form  ref="form" v-model="valid" lazy-validation>
+        <v-card-text class="grey lighten-2 text-center  "
+            >发送邮件</v-card-text
+          >
         <v-text-field
       v-model="subject"
       required
@@ -68,26 +70,14 @@
   </v-form >
 <!-- </v-col>
 </v-row> -->
-  <v-btn @click="test()">test</v-btn>
-      </v-card>
-    </v-dialog>
-      </div>
+  <!-- <v-btn @click="test()">test</v-btn>-->
+      </v-card> 
+    <!-- </v-dialog>
+      </div> -->
   </v-row>
 <v-row >
  <div class="text-center d-flex align-center justify-space-around">
     <v-tooltip left>
-      <template v-slot:activator="{ on, attrs }">
-        <v-btn
-          class="mx-2"
-          fab
-          dark
-          color="grey"
-          v-bind="attrs"
-          v-on="on"
-        >
-       邮箱<br>地址
-        </v-btn>
-      </template>
       <span>389142261@qq.com</span>
     </v-tooltip>
   </div>
@@ -110,7 +100,7 @@
       <!-- 新闻列表 -->
       <v-col cols="12" sm="6" md="6" lg="5">
         <v-list class="mx-5" flat two-line>
-          <v-subheader>新闻</v-subheader>
+          <!-- <v-subheader>新闻</v-subheader> -->
           <v-list-item-group v-model="selectedItem" color="primary">
             <v-list-item v-for="(item, i) in newsList" :key="i" @click="handleClick(item.id)">
               <v-list-item-content>
@@ -136,6 +126,7 @@
             <v-card style="height:180px">
               <v-img
                 src="https://aoanwebvue.oss-cn-beijing.aliyuncs.com/assets/home/news/3.png?"
+                 style="height: 100%"
               ></v-img>
             </v-card>
           </v-col>
@@ -195,11 +186,11 @@ export default {
     };
   },
   methods: {
-    test() {
-      this.subject='从的萨芬的萨芬';
-    //   this.text='法大师傅十分大师傅士大夫但是';
-      this.content='我们要接你的单子'
-    },
+    // test() {
+    //   this.subject='从的萨芬的萨芬';
+    // //   this.text='法大师傅十分大师傅士大夫但是';
+    //   this.content='我们要接你的单子'
+    // },
      handleClick(id){
        this.$router.push({path:'/newsDetail', query:{id}});
      },
@@ -233,16 +224,6 @@ export default {
       reset () {
         this.$refs.form.reset()
       },
-    //   watch: {
-    //   loader () {
-    //     const l = this.loader
-    //     this[l] = !this[l]
-
-    //     setTimeout(() => (this[l] = false), 3000)
-
-    //     this.loader = null
-    //   },
-    // },
   }
 };
 </script>
@@ -258,6 +239,6 @@ export default {
       position: fixed;
       z-index: 999;
       right:0;
-      top:87%
+      bottom: 0%;
   }
 </style>

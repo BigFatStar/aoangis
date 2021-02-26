@@ -6,6 +6,7 @@ export const lang = {
     newCenter: "newCenter",
     totalSolution: "totalSolution",
     aboutUs: "aboutUs",
+    enjoyus: "enjoyus",
     cutLanguage: "cutLanguage",
   },
 };

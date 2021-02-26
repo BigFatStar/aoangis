@@ -3,19 +3,20 @@
  */
 <template>
   <v-container fluid class="pa-0">
+      <div style="height:65vh">
     <v-carousel
       cycle
       dark
       hide-delimiter-background
       :show-arrows="false"
       delimiter-icon="mdi-minus"
-      height="100%"
       :aspect-ratio="15/7"
+      height="100%"
     >
       <v-carousel-item v-for="(item, i) in items" :key="i" :src="item.src" :aspect-ratio="15/7">
       </v-carousel-item>
     </v-carousel>
-
+    </div>
     <!-- 新闻中心组件 -->
     <news />
     <!-- 解决方案组件 -->

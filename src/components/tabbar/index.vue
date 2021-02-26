@@ -40,6 +40,12 @@
               <!-- 关于我们-->
             </v-btn>
           </v-toolbar-title>
+                <v-toolbar-title>
+            <v-btn to="enjoyus" text>
+              {{ $t("lang.home.enjoyus") }}
+              <!-- 加入我们-->
+            </v-btn>
+          </v-toolbar-title>
         </v-toolbar>
         <v-spacer></v-spacer>
         <!-- 搜索框 -->
