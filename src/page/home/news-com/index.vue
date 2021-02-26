@@ -35,21 +35,35 @@
         <!-- <v-row class="my-16">
     <v-col cols="6" md="4" offset="2" sm="8" offset-sm="4" offset-md="6"> -->
     <v-form  ref="form" v-model="valid" lazy-validation>
-        <v-card-text class="grey lighten-2 text-center  "
-            >发送邮件</v-card-text
-          >
-        <v-text-field
+        <v-card-text   class="grey lighten-2 "
+            >发送邮件
+            </v-card-text>
+     <v-container fluid>
+        <v-textarea class=" mb-n6"
       v-model="subject"
+      no-resize
+      rows="1"
       required
       :rules="subjectRules"
       label="姓名（联系方式）"
-    ></v-text-field>
-        <v-text-field
+    ></v-textarea>
+      </v-container>
+        <!-- <v-text-field
       v-model="content"
       required
       :rules="contentRules"
       label="内容"
-    ></v-text-field>
+    ></v-text-field> -->
+      <v-container fluid>
+    <v-textarea
+      label="内容"
+       no-resize
+      rows="5"
+      v-model="content"
+      required
+      :rules="contentRules"
+    ></v-textarea>
+  </v-container>
         <!-- <v-text-field
       v-model="text"
       required
@@ -241,4 +255,5 @@ export default {
       right:0;
       bottom: 0%;
   }
+
 </style>
