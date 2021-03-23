@@ -175,7 +175,7 @@
         <v-col cols="10" md="6" offset="1" offset-md="3">
           <v-img
             :aspect-ratio="2"
-            src="https://aoanwebvue.oss-cn-beijing.aliyuncs.com/assets/aboutUs/map.png?"
+            src="http://chuantu.xyz/t6/741/1616490210x1700338641.png"
           ></v-img>
         </v-col>
       </v-row>
