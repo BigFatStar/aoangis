@@ -72,7 +72,7 @@
         <v-col cols="10" md="6" offset="1" offset-md="3">
           <v-img
             :aspect-ratio="2"
-            src="https://aoanwebvue.oss-cn-beijing.aliyuncs.com/assets/aboutUs/map.png?"
+            src="http://chuantu.xyz/t6/741/1616488145x1700338588.png"
           ></v-img>
         </v-col>
       </v-row>
@@ -112,7 +112,7 @@
           <v-card-text
          class="mt-n8 mt-md-n6 text-caption text-md-body-2 px-md-0 my-10 mb-n6"
           >
-            公司地址：江西省南昌市南昌高新技术产业开发区火炬五路899号高航大厦6楼 
+            公司地址：江西省南昌市南昌高新技术产业开发区火炬五路899号
           </v-card-text>
           <v-card-text
             class="mt-n8 mt-md-n6 text-caption text-md-body-2 px-md-0 my-10"

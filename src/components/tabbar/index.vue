@@ -5,7 +5,7 @@
         <!-- <div>{{$store.state.login}}</div> -->
         <div>
           <v-img
-            src="https://aoanwebvue.oss-cn-beijing.aliyuncs.com/assets/logo.png?"
+            src="http://chuantu.xyz/t6/741/1616490101x992239408.png"
             aspect-ratio="1"
             width="56"
           ></v-img>

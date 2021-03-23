@@ -210,7 +210,7 @@
       <v-row>
         <v-col cols="12" md="6" offset-md="3">
           <v-card-text class="text-md-h6 text-subtitle-1 px-md-0"
-            >江西未来时刻科技有限公司</v-card-text
+            >江西敖岸测绘有限公司</v-card-text
           >
           <v-card-text
             class="mt-n8 mt-md-n6 text-caption text-md-body-2 px-md-0 my-10 mb-n6"
