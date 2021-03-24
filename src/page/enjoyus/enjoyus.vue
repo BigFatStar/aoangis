@@ -175,7 +175,7 @@
         <v-col cols="10" md="6" offset="1" offset-md="3">
           <v-img
             :aspect-ratio="2"
-            src="http://chuantu.xyz/t6/741/1616490210x1700338641.png"
+            src="https://z3.ax1x.com/2021/03/24/6bIDQ1.png"
           ></v-img>
         </v-col>
       </v-row>

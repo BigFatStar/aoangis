@@ -252,8 +252,8 @@ export default {
   #slider{
       position: fixed;
       z-index: 999;
-      right:0;
-      bottom: 0%;
+      right:10px;
+      bottom: 10px;
   }
 
 </style>

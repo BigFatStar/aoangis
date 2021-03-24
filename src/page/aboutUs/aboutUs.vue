@@ -72,7 +72,7 @@
         <v-col cols="10" md="6" offset="1" offset-md="3">
           <v-img
             :aspect-ratio="2"
-            src="http://chuantu.xyz/t6/741/1616488145x1700338588.png"
+            src="https://z3.ax1x.com/2021/03/24/6boZlR.png"
           ></v-img>
         </v-col>
       </v-row>

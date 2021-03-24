@@ -5,7 +5,7 @@
         <!-- <div>{{$store.state.login}}</div> -->
         <div>
           <v-img
-            src="http://chuantu.xyz/t6/741/1616490101x992239408.png"
+            src="https://i.postimg.cc/Bv2zbY61/673920f2c38ebb983fda4c862478e0.png"
             aspect-ratio="1"
             width="56"
           ></v-img>
