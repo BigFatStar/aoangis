@@ -112,7 +112,7 @@
           <v-card-text
          class="mt-n8 mt-md-n6 text-caption text-md-body-2 px-md-0 my-10 mb-n6"
           >
-            公司地址：江西省南昌市南昌高新技术产业开发区火炬五路899号
+            公司地址：江西省南昌市南昌高新技术产业开发区火炬五路
           </v-card-text>
           <v-card-text
             class="mt-n8 mt-md-n6 text-caption text-md-body-2 px-md-0 my-10"
