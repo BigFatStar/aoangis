@@ -180,6 +180,7 @@ export default {
       loading: false,
       dialog: false,
       subject:'',
+      valid:'',
     //   text:'',
       content:'',
       selectedItem: 0,
@@ -252,8 +253,8 @@ export default {
   #slider{
       position: fixed;
       z-index: 999;
-      right:10px;
-      bottom: 10px;
+      right:14px;
+      bottom: 15px;
   }
 
 </style>
