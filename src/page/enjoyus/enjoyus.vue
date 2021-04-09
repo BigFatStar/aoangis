@@ -40,9 +40,9 @@
     <!-- 这是公司简介 -->
     <v-card flat tile id="1" class="ma-md-16 ma-6 pa-2">
       <v-card-text class="text-center text-h6 text-md-h4">公司简介</v-card-text>
-      <v-card-text class="pa-md-1 pa-0 text-center text-subtitle-1 text-md-h6"
+      <!-- <v-card-text class="pa-md-1 pa-0 text-center text-subtitle-1 text-md-h6"
         >未来时刻，用科技改变地理测绘的未来。</v-card-text
-      >
+      > -->
       <v-card-text
         class="pa-md-1 pa-0 text-md-subtitle-1 text-center text-caption"
         >将科技与传统行业结合，致力于提供全面的信息解决方案。</v-card-text
@@ -175,7 +175,7 @@
         <v-col cols="10" md="6" offset="1" offset-md="3">
           <v-img
             :aspect-ratio="2"
-            src="https://z3.ax1x.com/2021/03/24/6bIDQ1.png"
+            src="http://i1.fuimg.com/735683/9056b05c6d32bac4.png"
           ></v-img>
         </v-col>
       </v-row>
