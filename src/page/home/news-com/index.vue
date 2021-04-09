@@ -38,22 +38,29 @@
         <v-card-text   class="grey lighten-2 "
             >发送邮件
             </v-card-text>
+
      <v-container fluid>
         <v-textarea class=" mb-n6"
-      v-model="subject"
+      v-model="name"
       no-resize
       rows="1"
       required
-      :rules="subjectRules"
-      label="姓名（联系方式）"
+      :rules="nameRules"
+      label="姓名"
     ></v-textarea>
       </v-container>
-        <!-- <v-text-field
-      v-model="content"
+
+       <v-container fluid>
+        <v-textarea class=" mb-n6"
+      v-model="tel"
+      no-resize
+      rows="1"
       required
-      :rules="contentRules"
-      label="内容"
-    ></v-text-field> -->
+      :rules="telRules"
+      label="电话"
+    ></v-textarea>
+      </v-container>
+
       <v-container fluid>
     <v-textarea
       label="内容"
@@ -64,11 +71,7 @@
       :rules="contentRules"
     ></v-textarea>
   </v-container>
-        <!-- <v-text-field
-      v-model="text"
-      required
-      label="备注"
-    ></v-text-field> -->
+
     <v-card-actions>
           <v-spacer></v-spacer>
            <v-btn
@@ -168,18 +171,15 @@ import axios, { AxiosInstance, AxiosRequestConfig, Method } from "axios";
 export default {
     mixins: [validationMixin],
     validations: {
-    //   name: { required, maxLength: maxLength(20) },
     email: { required, email },
-    //   subject: { required, subject },
-    //   text: { required, text },
-    //   content: { required, content },
     },
   data() {
     return {
       loader: null,
       loading: false,
       dialog: false,
-      subject:'',
+      name:'',
+      tel:'',
       valid:'',
     //   text:'',
       content:'',
@@ -192,10 +192,13 @@ export default {
         { text: "青海地质测绘院拓展省外市场",time:"2020-12-23",id:4 },
         { text: "黑龙江省开展测绘统计网络培训",time:"2020-12-24",id:5 },
       ],
-       subjectRules: [
+       nameRules: [
         v => !!v || '此选项必填',
       ],
        contentRules: [
+        v => !!v || '此选项必填',
+      ],
+        telRules: [
         v => !!v || '此选项必填',
       ],
     };
@@ -220,9 +223,9 @@ export default {
         url:'api/mail/sendmail',
         // responseType:'stream',
         data: {
-         "subject":this.subject,
-        //  "text":this.text,
-         "content":this.content
+         "name":this.name,
+         "phone":this.tel,
+         "content":this.content,
         },
          headers: {
         "Content-Type": "application/json",
