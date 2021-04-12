@@ -56,7 +56,6 @@
       class="mr-4"
       @click="submit"
  :disabled="isDisabled"
-    v-model="btn"
     >
       提交
     </v-btn>
