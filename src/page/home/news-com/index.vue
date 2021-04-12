@@ -10,31 +10,9 @@
       <!-- 侧边栏 -->
     <div id="slider">
     <v-row>
-   <!-- <div class="text-center" >
-    <v-dialog
-      v-model="dialog"
-      width="500"
-    >
-      <template v-slot:activator="{ on, attrs }">
-        <v-btn
-          class="mx-2" 
-          fab
-          dark
-          color="grey"
-          v-bind="attrs"
-          v-on="on"
-        >
-          联系<br>我们
-        </v-btn>
-      </template> -->
-      <v-card >
-        <!-- <v-card-title class="headline grey lighten-2">
-          发送邮件
-        </v-card-title>
-         <v-divider></v-divider> -->
-        <!-- <v-row class="my-16">
-    <v-col cols="6" md="4" offset="2" sm="8" offset-sm="4" offset-md="6"> -->
+    <v-card >
     <v-form  ref="form" v-model="valid" lazy-validation>
+        
         <v-card-text   class="grey lighten-2 "
             >发送邮件
             </v-card-text>
@@ -77,6 +55,8 @@
            <v-btn
       class="mr-4"
       @click="submit"
+ :disabled="isDisabled"
+    v-model="btn"
     >
       提交
     </v-btn>
@@ -85,12 +65,7 @@
     </v-btn>
         </v-card-actions>
   </v-form >
-<!-- </v-col>
-</v-row> -->
-  <!-- <v-btn @click="test()">test</v-btn>-->
       </v-card> 
-    <!-- </v-dialog>
-      </div> -->
   </v-row>
 <v-row >
  <div class="text-center d-flex align-center justify-space-around">
@@ -99,6 +74,7 @@
     </v-tooltip>
   </div>
 </v-row>
+
 </div>
 
     <v-row>
@@ -168,6 +144,7 @@ import { validationMixin } from 'vuelidate'
 import { required, maxLength, email } from 'vuelidate/lib/validators'
 import axios, { AxiosInstance, AxiosRequestConfig, Method } from "axios";
 
+
 export default {
     mixins: [validationMixin],
     validations: {
@@ -184,6 +161,7 @@ export default {
     //   text:'',
       content:'',
       selectedItem: 0,
+      disabled: false,
       newsList: [
         { text: "45年來3次測量 珠峰長高了",time:"2020/12/10",id:0 },
         { text: "上海2021年元旦将启用“上海2000坐标系",time:"2020-12-7",id:1 },
@@ -201,8 +179,20 @@ export default {
         telRules: [
         v => !!v || '此选项必填',
       ],
+   
     };
   },
+    computed: {  
+        isDisabled() {  
+            let flag = true;  
+            if (!this.name|| !this.tel||!this.content) {  
+                flag = true  
+            } else {  
+                flag = false  
+            }  
+            return flag  
+        },  
+  },  
   methods: {
     // test() {
     //   this.subject='从的萨芬的萨芬';
@@ -217,8 +207,8 @@ export default {
      },
 
       submit () {
-      this.$refs.form.validate()
-      axios({
+        this.$refs.form.validate()
+        axios({
         method:'post',
         url:'https://www.aoangis.com/api/mail/sendmail',
         // responseType:'stream',
@@ -232,11 +222,14 @@ export default {
       },
       })
       .then(function(response) {
-       return response.data
+        console.log(response)
+        alert("提交成功")
       })
       .catch(function(error){
           console.log(error)
       });
+    
+   
       },
 // 
       reset () {
