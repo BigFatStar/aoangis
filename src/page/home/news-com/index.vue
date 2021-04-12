@@ -220,7 +220,7 @@ export default {
       this.$refs.form.validate()
       axios({
         method:'post',
-        url:'api/mail/sendmail',
+        url:'https://www.aoangis.com/api/mail/sendmail',
         // responseType:'stream',
         data: {
          "name":this.name,

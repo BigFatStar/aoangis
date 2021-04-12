@@ -173,6 +173,7 @@
       >
       <v-row>
         <v-col cols="10" md="6" offset="1" offset-md="3">
+            
           <v-img
             :aspect-ratio="2"
             src="http://i1.fuimg.com/735683/9056b05c6d32bac4.png"
