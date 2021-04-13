@@ -67,6 +67,21 @@
       </v-card> 
   </v-row>
 <v-row >
+    <div id="btn">
+         <v-tooltip right>
+      <template v-slot:activator="{ on, attrs }">
+        <v-btn
+          color="primary"
+          dark
+          v-bind="attrs"
+          v-on="on"
+        >
+          联系我们
+        </v-btn>
+      </template>
+      <span>电话：18970937294<br>邮箱：</span>
+    </v-tooltip>
+    </div>
  <div class="text-center d-flex align-center justify-space-around">
     <v-tooltip left>
       <span>389142261@qq.com</span>
@@ -251,5 +266,10 @@ export default {
       right:14px;
       bottom: 15px;
   }
-
+ #btn{
+      position: fixed;
+      z-index: 999;
+      left:14px;
+      bottom: 15px;
+  }
 </style>
