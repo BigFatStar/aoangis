@@ -68,7 +68,7 @@
   </v-row>
 <v-row >
     <div id="btn">
-         <v-tooltip right>
+         <v-tooltip bottom>
       <template v-slot:activator="{ on, attrs }">
         <v-btn
           color="primary"
@@ -269,7 +269,7 @@ export default {
  #btn{
       position: fixed;
       z-index: 999;
-      left:14px;
-      bottom: 15px;
+      right:14px;
+      top: 15px;
   }
 </style>
