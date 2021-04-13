@@ -79,7 +79,7 @@
           联系我们
         </v-btn>
       </template>
-      <span>电话：18970937294<br>邮箱：389142261@qq.com</span>
+      <span>吴先生：18970937294<br>程先生：18770060603<br>陈先生：17770086105<br>邮箱：389142261@qq.com<br></span>
     </v-tooltip>
     </div>
  <div class="text-center d-flex align-center justify-space-around">
