@@ -176,7 +176,7 @@
             
           <v-img
             :aspect-ratio="2"
-            src="http://i1.fuimg.com/735683/9056b05c6d32bac4.png"
+            src="https://z3.ax1x.com/2021/04/06/cljN6S.png"
           ></v-img>
         </v-col>
       </v-row>
