@@ -133,7 +133,7 @@ export default {
   components: { news, solutions },
   data() {
     return {
-          dialog: false,
+      dialog: false,
       name:'',
       tel:'',
       valid:'',
