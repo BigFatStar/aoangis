@@ -14,6 +14,7 @@ export default new Vuex.Store({
   state:{
     drawer:false,   //控制navigation-drawer显示和隐藏
     isShow: true,   //控制导航栏和页脚在user页面隐藏
+    showCard: false //弹窗的显示隐藏
   },
   mutations:{
     changeDrawer(state){
@@ -21,6 +22,9 @@ export default new Vuex.Store({
     },
     changeShow(state) {
       state.isShow = !state.isShow;
+    },
+    changePopUp(state) {
+        state.showCard = !state.showCard;
     }
   }
 });

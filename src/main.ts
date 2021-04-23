@@ -29,7 +29,7 @@ const i18n = new VueI18n({
 });
 Vue.prototype.axios = axios;
 Vue.prototype.$vueaxios = VueAxios;
-
+Vue.prototype.showCard = ''
 // 路由守卫
 // router.beforeEach((to, from, next) => {
 //   console.log("main.ts to,from,next", to, from, next);

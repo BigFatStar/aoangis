@@ -17,7 +17,7 @@ import foot from "@/components/foot";
 import overlay from "@/components/overlay";
 import authServies from "@/page/auth/auth.servies";
 import Bus from "@/common/bus";
-
+import { mapMutations } from "vuex";
 export default {
   data() {
     return {
@@ -25,6 +25,7 @@ export default {
     };
   },
   created: function () {
+      this.changePopUp();
     // 在程序初始化获取本地的token，如果本地不存在token则跳转至登录页面
     console.log(
       "app.vue this.$store.state.login.token == null",
@@ -54,7 +55,10 @@ export default {
 			document.body.scrollTop = 0;
 			document.documentElement.scrollTop = 0;
 		}
-},
+    },
+    methods: {
+        ...mapMutations(["changePopUp"]),
+    },
   components: {
     tabbar,
     slidebar,
