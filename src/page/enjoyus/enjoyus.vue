@@ -6,43 +6,12 @@
         :aspect-ratio="3"
         class="white--text"
         >
-        <!-- <v-card-title>有一门科学技术。测绘学 有一门学科，叫科学。
-        </v-card-title>
-        <v-card-title>有一门技术，叫科学技术。 </v-card-title>
-        <v-card-title>有一门科学技术，叫测绘学。 </v-card-title>
-        <v-card-title>有一伙人，就在我们身边。 </v-card-title>
-        <v-card-text>
-          时常，我们也很迷茫。 民工？技术员？建库的？程序员？
-          我们是运用科学技术的人。 成家了。 你家。 就是。科学家。
-        </v-card-text>
-        <v-card-text>
-          (电脑。全家最重要、最宝贵的是电脑数据。
-          一堆外人看不懂的仪器、棍子。高科技的样子。)
-        </v-card-text>
-        <v-card-text>
-          怎么样？科学家！ 运用科学技术的人。测绘人。 扶尺你、看仪器的组长。
-          无人机、搞设计的。 建立库的地信
-          医学、遥感、经济、甚至人工智能
-          </v-card-text> -->
       </v-img>
     </v-card>
-
-    <!-- <v-app-bar flat class="grey lighten-5" inverted-scroll>
-      <v-tabs show-arrows centered>
-        <v-tab v-for="link in links" :key="link.id" >
-          <a :href="'#' + link.id" style="text-decoration: none">
-            <v-btn text>{{ link.text }} </v-btn>
-          </a>
-        </v-tab>
-      </v-tabs>
-    </v-app-bar> -->
 
     <!-- 这是公司简介 -->
     <v-card flat tile id="1" class="ma-md-16 ma-6 pa-2">
       <v-card-text class="text-center text-h6 text-md-h4">公司简介</v-card-text>
-      <!-- <v-card-text class="pa-md-1 pa-0 text-center text-subtitle-1 text-md-h6"
-        >未来时刻，用科技改变地理测绘的未来。</v-card-text
-      > -->
       <v-card-text
         class="pa-md-1 pa-0 text-md-subtitle-1 text-center text-caption"
         >将科技与传统行业结合，致力于提供全面的信息解决方案。</v-card-text
@@ -180,34 +149,6 @@
           ></v-img>
         </v-col>
       </v-row>
-      <!-- <v-row no-gutters class="my-3">
-        <v-col cols="3" md="2" offset-md="3" offset="1">
-          <v-card-text class="text-center text-md-subtitle-1 text-caption pa-0"
-            >业务电话</v-card-text
-          >
-          <v-card-text class="text-center text-md-subtitle-1 text-caption pa-0"
-            >15678945647</v-card-text
-          >
-        </v-col>
-        <v-divider vertical></v-divider>
-        <v-col cols="3" md="2">
-          <v-card-text class="text-center text-md-subtitle-1 text-caption pa-0"
-            >人事电话</v-card-text
-          >
-          <v-card-text class="text-center text-md-subtitle-1 text-caption pa-0"
-            >15698745632</v-card-text
-          >
-        </v-col>
-        <v-divider vertical></v-divider>
-        <v-col cols="4" md="2">
-          <v-card-text class="text-center text-md-subtitle-1 text-caption pa-0"
-            >邮箱</v-card-text
-          >
-          <v-card-text class="text-center text-md-subtitle-1 text-caption pa-0"
-            >389142261@qq.com</v-card-text
-          >
-        </v-col>
-      </v-row> -->
       <v-row>
         <v-col cols="12" md="6" offset-md="3">
           <v-card-text class="text-md-h6 text-subtitle-1 px-md-0"
@@ -232,14 +173,6 @@
 export default {
   data() {
     return {
-      // tab: null,
-      // links: [
-      //   { text: "公司简介", id: "1" },
-      //   { text: "愿景及使命", id: "2" },
-      //   { text: "企业文化", id: "4" },
-      //   { text: "人才招聘", id: "5" },
-      //   { text: "联系我们", id: "6" },
-      // ],
       items: [
         {
           name: "测绘测量员",

@@ -22,7 +22,7 @@ export default {
   data: () => ({
     items: [
       {
-        title: "45年來3次測量 珠峰長高了",
+        title: "45年來3次测量 珠峰长高了",
         time:"2020/12/10",
         id:0
       },

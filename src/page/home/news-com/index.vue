@@ -7,9 +7,6 @@
         </h2>
       </v-col>
     </v-row>
-      <!-- 侧边栏 -->
-   
-
     <v-row>
       <!-- 主图片 -->
       <v-col cols="12" sm="6" md="6" lg="4" >
@@ -52,7 +49,7 @@
             <v-card style="height:180px">
               <v-img
                 src="https://aoanwebvue.oss-cn-beijing.aliyuncs.com/assets/home/news/3.png?"
-                 style="height: 100%"
+                style="height: 100%"
               ></v-img>
             </v-card>
           </v-col>
@@ -92,23 +89,17 @@ export default {
       selectedItem: 0,
       disabled: false,
       newsList: [
-        { text: "45年來3次測量 珠峰長高了",time:"2020/12/10",id:0 },
+        { text: "45年來3次测量 珠峰长高了",time:"2020/12/10",id:0 },
         { text: "上海2021年元旦将启用“上海2000坐标系",time:"2020-12-7",id:1 },
         { text: "国家质检中心主编3部国家标准正式发布实施",time:"2020-12-11",id:2 },
         { text: "我国成功发射遥感三十三号卫星 主要用于科学试验、国土资源普查、农产品估产及防灾减灾等领域",time:"2020-12-28",id:3 },
         { text: "青海地质测绘院拓展省外市场",time:"2020-12-23",id:4 },
         { text: "黑龙江省开展测绘统计网络培训",time:"2020-12-24",id:5 },
       ],
-   
     };
   },
 
   methods: {
-    // test() {
-    //   this.subject='从的萨芬的萨芬';
-    // //   this.text='法大师傅十分大师傅士大夫但是';
-    //   this.content='我们要接你的单子'
-    // },
      handleClick(id){
        this.$router.push({path:'/newsDetail', query:{id}});
      },
