@@ -61,9 +61,9 @@
           <v-card flat tile>
             <v-card-text class="text-h6 text-md-h4 px-1">企业文化</v-card-text>
             <v-card-text class="text-subtitle-1 text-md-h6 pa-1"
-              >服从</v-card-text
+              >仁德</v-card-text
             >
-            <v-card-text class="pa-1">有令必行，令行禁止</v-card-text>
+            <v-card-text class="pa-1">以人为本，以德服人</v-card-text>
             <v-card-text class="text-subtitle-1 text-md-h6 pa-1"
               >进取</v-card-text
             >
