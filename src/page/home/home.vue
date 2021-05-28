@@ -1,7 +1,6 @@
 <template>
   <v-container fluid class="pa-0">
-    <div id="cesiumContainer"></div>
-    <!-- <div style="height: 65vh">
+    <div style="height: 65vh">
       <v-carousel
         cycle
         dark
@@ -18,7 +17,7 @@
           :aspect-ratio="15 / 7"
         ></v-carousel-item>
       </v-carousel>
-    </div> -->
+    </div>
     <!-- 新闻中心组件 -->
     <news />
     <!-- 解决方案组件 -->
@@ -136,23 +135,7 @@ export default {
       menu: false,
     };
   },
-  mounted() {
-    Cesium.Ion.defaultAccessToken =
-      "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiI0NmNkYzYwZS02MGNmLTRmNTgtYmY3MC1mZTJiYWJjNzBiZDYiLCJpZCI6NTYzODAsImlhdCI6MTYyMTQyOTU0M30.hQjFs_VxL0bgXZhbkqLdHUV8XpbqzY-MT6Qrz7mjI8s";
-    const viewer = new Cesium.Viewer("cesiumContainer", {
-      terrainProvider: Cesium.createWorldTerrain(),
-    });
-    const buildingTileset = viewer.scene.primitives.add(
-      Cesium.createOsmBuildings()
-    );
-    viewer.camera.flyTo({
-      destination: Cesium.Cartesian3.fromDegrees(103.84, 31.15, 17850000),
-      orientation: {
-        heading: Cesium.Math.toRadians(0.0),
-        pitch: Cesium.Math.toRadians(-15.0),
-      },
-    });
-  },
+  
   computed: {
     isDisabled() {
       let flag = true;
